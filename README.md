@@ -8,12 +8,11 @@ Extension makes similars thing that `_.extend` function do. But it is more advan
 It supports different rules which give you more control in building object models.
 Like:
 * Parent never overrides methods of child. This is possible when you use `_.extend` function
-* It copy all methods into prototype of new object. So changing in parents doesn't affect childs.
-* It stores references to parent prototypes. So you always can get overrided implementaion. if you even have multiple inheritance.
+* It copies all methods into prototype of new object. So changing in parents doesn't affect children.
+* It stores references to parent prototypes. So you always can get overridden implementation. if you even have multiple inheritance.
 
-It has compact syntax and you don't need to get prototype of each object from which you are inheriting your object. 
+It has compact syntax and you don't need to get prototype of each object you are inheriting your object from. 
 You can use it constructors. 
-
 Look at this. This code inherits object Child from Parent1 and Parent2
 ``````
 _.inherit(Child, Parent1, Parent2);
@@ -33,7 +32,7 @@ var person = new Person("Denis");
 alert(person.sayHello());
 `````````
 
-And it is easy extends and override.
+And it is easy to extend and to override.
 
 ````````
 function Tourist(name, country) {
@@ -48,7 +47,4 @@ _.inherit(Tourist, Person, {
 var tourist = new Tourist("Denis", "Ukraine");
 alert(person.sayHello());
 `````````
-
-
- 
 
