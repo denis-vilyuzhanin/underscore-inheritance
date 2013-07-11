@@ -29,7 +29,7 @@ _.inherit(Person, {
     sayHello: function(){return "Hello. I'm " + this.name + ".";}
 });
 var person = new Person("Denis");
-alert(person.sayHello());
+alert(person.sayHello()); // => Hello. I'm Denis.
 `````````
 
 And it is easy to extend and to override.
@@ -45,6 +45,6 @@ _.inherit(Tourist, Person, {
     }
 });
 var tourist = new Tourist("Denis", "Ukraine");
-alert(person.sayHello());
+alert(person.sayHello()); // => Hello. I'm Denis. I'm from Ukraine
 `````````
 
