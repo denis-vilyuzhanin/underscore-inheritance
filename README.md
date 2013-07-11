@@ -1,10 +1,15 @@
-#Inheritance extention for underscoreJS
-
-You want build your application in classic OOP way or you don't like prototyping approach.
-So this extension helps you to do that.
+Inheritance for underscore.js
+======================================
+You are not satisfied by standart `_.extend` function from underscore.js. You don't like prototyping approach and 
+you want to build your application in classic OOP way. 
+So this extension for underscore.js helps you to do this.
 
 Extension makes similars thing that `_.extend` function do. But it is more advanced.
 It supports different rules which give you more control in building object models.
+Like:
+    * Parent never overrides methods of child. This is possible when you use `_.extend` function
+    * It copy all methods into prototype of new object. So changing in parents doesn't affect childs.
+    * It stores references to parent prototypes. So you always can get overrided implementaion. if you even have multiple inheritance.
 
 It has compact syntax and you don't need to get prototype of each object from which you are inheriting your object. 
 You can use it constructors. 
