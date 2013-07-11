@@ -14,14 +14,14 @@ Like:
 It has compact syntax and you don't need to get prototype of each object you are inheriting your object from. 
 You can use it constructors. 
 Look at this. This code inherits object Child from Parent1 and Parent2
-``````
+``````js
 _.inherit(Child, Parent1, Parent2);
 ``````
 It is simple, isn't it. 
 
 It is simple define new objects
 
-`````
+`````js
 function Person(name) {
     this.name = name;
 }
@@ -34,7 +34,7 @@ alert(person.sayHello());
 
 And it is easy to extend and to override.
 
-````````
+````````js
 function Tourist(name, country) {
     Person.call(this, name);
     this.country = countery;
